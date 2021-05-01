@@ -28,6 +28,7 @@ errorMessage = '';
         console.log("user data")
         console.log(data)
         this.user= data;
+
       },
       err => {
         this.errorMessage = err.error.message;

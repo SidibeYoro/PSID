@@ -87,7 +87,7 @@ public class UserServiceController {
                     .body(new MessageResponse("Error: Email is already in use!"));
         }
         // Create new user's account
-        int medailles = 0;
+        int medailles = 10;
         Adresse add = new Adresse(userRequest.getStreet(),userRequest.getZip(), userRequest.getCity(), userRequest.getCountry());
 
         String password = userRequest.getPassword();

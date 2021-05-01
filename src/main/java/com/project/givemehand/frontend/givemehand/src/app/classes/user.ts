@@ -15,7 +15,8 @@ export class User {
         country: string;
         dateInscription: String;
         medailles : number;
-        adresse : Adresse;
+        adresse : Adresse
+
 
        /* constructor(   id:number,
             email : string,

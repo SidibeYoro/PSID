@@ -1,4 +1,9 @@
-<div   class="container">
+
+<div   class="container">  
+  <div style="text-align:left;margin-top:100px">
+
+    <H3> Il vous reste {{user.medailles}} medailles </H3>
+</div>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="lastName">Nom</label>
@@ -59,8 +64,8 @@
 
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
-</div>
 
+</div>
 
 <div style="margin-top : 100px" class="alert alert-success" *ngIf="submitted">
   <h4>You submitted successfully!</h4>
