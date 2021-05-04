@@ -1,9 +1,8 @@
-<p>register works!</p>
 
 
 <body>
   <div class="main-w3layouts wrapper">
-    <h1>SignUp !</h1>
+    <h1> Inscription </h1>
     <div class="main-agileinfo">
       <div class="agileits-top" >
         <form  #registerForm="ngForm" *ngIf="!isSuccessful"
@@ -71,13 +70,13 @@
           </div>
           <input type="submit" value="SIGNUP">
           <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
-              Signup failed!<br />{{ errorMessage }}
+              <br />{{ errorMessage }}
           </div><br>
-          <p>Already have an Account? <a routerLink="../connexion">Login Now!</a></p>
+          <p>Vous avez un compte ? <a routerLink="../connexion">Connectez-vous!</a></p>
       </form>
 
       <div style="margin-top : 100px" class="alert alert-success" *ngIf="isSuccessful">
-        Your registration is successful!
+        Votre inscription a bien ete prise en compte!
       </div>
     </div>
     </div>

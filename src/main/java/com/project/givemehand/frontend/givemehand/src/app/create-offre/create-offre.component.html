@@ -1,11 +1,9 @@
 
-<br>
-<br>
-<br>
-<br><h3 >Create Offre</h3>
+<h1>Creation d'offre</h1>
+<hr/>
 
 <div [hidden]="submitted" class="container">
-<form (ngSubmit)="onSubmit()">
+<form class="form-style-5" (ngSubmit)="onSubmit()" *ngIf="!submitted">
 
             <div class="form-group">
                 <label for="name">Titre</label>
@@ -43,13 +41,13 @@
               <label for="name">Nombre de Medailles</label>
               <input type="text" class="form-control" id="nbMedailles"  required [(ngModel)]="offres.nbMedailles" name="nbMedailles">
             </div>
-          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="submit" class="btn btn-success"><span>Creer une offre </span></button>
 
         </form>
     </div>
-
-        <div [hidden]="!submitted">
-          <h4>You submitted successfully!</h4>
-        </div>
+    <div  class="alert alert-success" *ngIf="submitted">
+      <p > <center> Votre offre a bien ete cree!</center></p>
+    </div>
+           
 
    

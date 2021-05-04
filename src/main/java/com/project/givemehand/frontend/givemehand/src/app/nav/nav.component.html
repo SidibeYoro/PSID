@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-xl navbar-dark bg-danger fixed-top">
+
+
+<!--<nav class="navbar navbar-expand-xl navbar-dark bg-danger fixed-top">
   <img src= "assets/images/GMH.png" style="width: 80px; height: 45px;"/>
     <div class="collapse navbar-collapse" >
-      <!-- Left nav items -->
       <ul class="navbar-nav mr-auto">
 
         <li class="nav-item">
@@ -18,7 +19,6 @@
           <a class="nav-link" routerLinkActive="active" routerLink="/moderate" *ngIf="isLoggedInADM" >Moderation</a>
         </li>
       </ul>
-           <!-- Right nav items  -->
            <ul class="navbar-nav ml-auto"  >
 
             <li class="nav-item">
@@ -35,4 +35,60 @@
             </li>
           </ul>
   </div>
+</nav> -->
+<div class="container">
+  <div class="logo-box">
+    <a href="/">
+      <img src= "assets/images/logo.png" style="width: 200px; height: 200px;"/>    </a>
+  </div>
+  <nav>
+<ul>
+  <li class="circle">
+   <strong> {{user.medailles}} M </strong>
+  </li>
+
+  <li> <a class="nav-link"  *ngIf="isLoggedIn"  routerLink="/updateprofil">Hi {{user.firstName}} !!</a> </li>
+
+  <li> <a class="nav-link" routerLinkActive="active" *ngIf="isLoggedIn" routerLink="/mesDemandes" >Mes demandes</a></li>
+    <li>  <a class="nav-link" routerLinkActive="active" *ngIf="isLoggedIn" routerLink="/offrelist"  > Mes offres</a></li>
+    <li >
+      <a href class="nav-link" routerLinkActive="active" routerLink="/moderate" *ngIf="isLoggedInADM" >Moderation</a>
+    </li>
+  <li><a href *ngIf="isLoggedIn || isLoggedInADM" lass="nav-link" (click)="logout()">Deconnexion</a></li>
+
+  <li><a href class="nav-link" *ngIf="!(isLoggedInADM || isLoggedIn)" routerLink="connexion">CONNEXION</a></li>
+  <li><a href class="nav-link"  *ngIf="!(isLoggedInADM || isLoggedIn)" routerLink="inscription">INSCRIPTION</a></li>
+
+</ul>
 </nav>
+</div>
+
+
+    <!-- Item 1 -->
+  
+  
+  
+  <!-- <input onclick="window.location='/';" type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/><strong>GVM</strong>
+    <label for="slide-item-1"><p class="icon">  
+    </p><span>Home</span></label>
+  
+  <input type="radio" onclick="window.location='connexion';"  name="slideItem" id="slide-item-2" class="slide-toggle"/>
+  <label for="slide-item-2"><p class="icon">
+    <img src= "assets/images/login.png" style="width: 30px; height: 30px;"/>
+  </p>CONNEXION</label>
+
+  
+  <input type="radio" onclick="window.location='inscription';"  name="slideItem" id="slide-item-3" class="slide-toggle"/>
+  <label for="slide-item-3"> <p class="icon">
+    <img src= "assets/images/add-user.png" style="width: 30px; height: 30px;"/>
+</p>INSCRIPTION</label>
+  
+  <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+  <label for="slide-item-4"><p class="icon">✎</p><span>Blog</span></label>
+  
+  <div class="clear"></div>
+  
+  <div class="slider">
+    <div class="bar"></div>
+  </div>
+--> 

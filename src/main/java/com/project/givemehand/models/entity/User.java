@@ -45,7 +45,7 @@ public class User {
     private Adresse adresse;
     @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
-            cascade = CascadeType.PERSIST)
+            cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Demande> demandes= new HashSet<>();
 
     @JsonIgnore

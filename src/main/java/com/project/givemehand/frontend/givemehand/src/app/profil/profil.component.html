@@ -1,22 +1,21 @@
-<p>profil works!</p>
+<h1>Profil utilisateur</h1> 
 
-<div> 
-<div>
+<hr/>
+<div class="member">
+  <div class="nameProfil">
+    <img class="imgProfil" alt="My image name" src="assets/images/icon-user.png">
+    <p class="name"> {{user.firstName}} {{user.lastName}}</p><br>
 
-    <img class="imgProfil" alt="My image name" src="assets/images/picto.jpeg">
-    <h2> {{user.firstName}} {{user.lastName}}</h2><br>
-    <h2> {{user.medailles}} Medailles</h2>
+  </div>
+    <p> <strong> {{user.medailles}} </strong> Medailles</p>
+    <p> <strong> Membre depuis </strong> {{user.dateInscription}}</p>
+</div> <br>
 
 
-</div>
-<h4> Membre depuis {{user.dateInscription}}</h4>
-</div>
-
-
-    <div> 
-        <h1> Informations generales</h1>
-        <div class="panel-body">
-            <table class="table table-striped">
+    <div class="infosGen"> 
+        <label class="lab"> Informations generales</label>
+        <div class="container-fluid">
+            <table class="styled-table">
               <thead>
                 <tr>
                   <th scope="col">Email</th>
@@ -46,11 +45,10 @@
           </div>
     </div>
 
-    <div> 
-        <h1> Informations Offres</h1>
-
-        <div class="panel-body">
-            <table class="table table-striped">
+    <div class="infosOffres"> 
+      <label class="lab"> Informations Offres</label>
+      <div class="container-fluid">
+          <table class="styled-table">
               <thead>
                 <tr>
                   <th scope="col">Titre</th>
@@ -76,10 +74,10 @@
     </div> 
 
 
-    <div> 
-        <h1> Informations demandes </h1>
-        <div class="panel-body">
-            <table class="table table-striped">
+    <div class="infosDem"> 
+        <label class="lab"> Informations demandes </label>
+        <div class="container-fluid">
+            <table class="styled-table">
               <thead>
                 <tr>
                   <th scope="col">Totales</th>

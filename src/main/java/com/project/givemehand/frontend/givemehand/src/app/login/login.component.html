@@ -1,35 +1,58 @@
 <body>
-  <div class="main-w3layouts wrapper">*
-  <h1>Log In !</h1>
-  
-  <div class="main-agileinfo">
-  
-  <div class="agileits-top">
-  
-  <form *ngIf="!isLoggedIn"
-  name="form"
-  (ngSubmit)="f.form.valid && onSubmit()"
-  #f="ngForm"
-  novalidates>
+  <div class="main-w3layouts wrapper">
+    <h1>Connexion</h1>
+    <div class="main-agileinfo">
+      <div class="agileits-top">
+        <form   *ngIf="!isLoggedIn"
+         name="form"
+        (ngSubmit)="f.form.valid && onSubmit()"
+        #f="ngForm"
+        novalidates>
+
 
     <div class="form-group">
           <label for="email">E-mail</label>
-          <input type="email" class="text" id="email" required [(ngModel)]="user.email" name="email" #email="ngModel">
-      <div class="alert alert-danger"
-        role="alert"
-        *ngIf="f.submitted && email.invalid">
-          Email is required
-      </div>
-    </div>
-  
-    <div class="form-group">
-        <label for="password">Mot de passe</label>
-        <input type="password" class="text" id="password" name="password" [(ngModel)]="user.password" required #password="ngModel" />
-        <div class="alert alert-danger"
-          role="alert"
-          *ngIf="f.submitted && password.invalid">
-          Password is required
+          <input type="email" class="text" id="email"  required
+          [(ngModel)]="user.email" name="email" #email="ngModel">
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="f.submitted && email.invalid"
+          >
+            L'email est requis
+          </div>
         </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input type="password" class="text" id="password" name="password" [(ngModel)]="user.password" required  #password="ngModel" />
+            <div
+                class="alert alert-danger"
+                role="alert"
+                *ngIf="f.submitted && password.invalid">
+              Le mot de passe est requis
+
+            </div>
+        </div>
+        <div class="form-group">
+          <input class="btn" type="submit" value="LOGIN">
+          
+        </div>
+        <div class="form-group">
+          <div
+            class="alert alert-danger"
+            role="alert"
+            *ngIf="f.submitted && isLoginFailed"
+          >
+            Echec connexion {{ errorMessage }}
+          </div>
+        </div>
+        <p>Nouveau ? <a routerLink="../inscription">Inscrivez-vous !</a></p>
+  </form>
+  </div>
+
+  
+
     </div>
   
     <div class="form-group">

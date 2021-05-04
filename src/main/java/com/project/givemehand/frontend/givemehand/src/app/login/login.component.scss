@@ -1,25 +1,34 @@
+*{
+  font-family: 'Montserrat', sans-serif;
 
+}
 body {
 
     background-size: cover;
     background-attachment: fixed;
     padding-top: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  //  font-family: 'Roboto', sans-serif;
   }
   
 h1 {
     font-size: 3em;
-    color: #dc3545;;
+    color: #EACAAC;
     text-align: center;
+
     font-weight: 100;
     text-transform: capitalize;
     letter-spacing: 4px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+   // font-family: 'Roboto', sans-serif;
   }
   
   /*-- main --*/
   .main-w3layouts {
     padding: 3em 0 1em;
+    margin-top: -70px;
   }
   
   .main-agileinfo {
@@ -30,14 +39,14 @@ h1 {
   }
   
   .agileits-top {
-    background-color: #F7B2A4;
+    background-color: #EACAAC;
     text-align: center;
     padding: 3em;
   }
   
   input[type="text"], input[type="email"], input[type="password"] {
     font-size: 0.9em;
-    color: #fff;
+    color: #000000;
     font-weight: 100;
     width: 94.5%;
     display: block;
@@ -51,7 +60,7 @@ h1 {
     background-position: -800px 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
+   // color: #fff;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -94,13 +103,18 @@ h1 {
   :-ms-input-placeholder {
     color: #fff;
   }
-  
+  label {
+  //  text-align: right;
+    float: left;
+   // display: block;
+   // margin-bottom: 8px;
+  }
   input[type="submit"] {
     font-size: .9em;
-    color: #fff;
-    background: #dc3545;
+    color: #000000;
+    background: #FFFCFC;
     outline: none;
-    border: 1px solid #dc3545;
+    border: 2px solid #FFFCFC;
     cursor: pointer;
     padding: 0.9em;
     -webkit-appearance: none;
@@ -115,7 +129,9 @@ h1 {
     -o-transition: .5s all;
     -ms-transition: .5s all;
     transition: .5s all;
-    background: #BF5039;
+    background: #1abc9c;
+    border: 2px solid #1abc9c;
+
   }
   
   .agileits-top p {

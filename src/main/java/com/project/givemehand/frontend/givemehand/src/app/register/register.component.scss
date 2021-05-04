@@ -3,22 +3,25 @@ body {
 
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
 h1 {
-    font-size: 3em;
-    color: #dc3545;;
-    text-align: center;
-    font-weight: 100;
-    text-transform: capitalize;
-    letter-spacing: 4px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+  color: #EACAAC;
+  text-align: center;
+
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-family: 'Montserrat', sans-serif;
   }
   
   /*-- main --*/
   .main-w3layouts {
     padding: 3em 0 1em;
+    margin-top: -70px;
+
   }
   
   .main-agileinfo {
@@ -29,14 +32,14 @@ h1 {
   }
   
   .agileits-top {
-    background-color: #F7B2A4;
+    background-color: #EACAAC;
     text-align: center;
     padding: 3em;
   }
   
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"], input[type="email"], input[type="password"],input[type="number"] {
     font-size: 0.9em;
-    color: #fff;
+    color: #000000;
     font-weight: 100;
     width: 94.5%;
     display: block;
@@ -50,7 +53,7 @@ h1 {
     background-position: -800px 0;
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
+    //color: #fff;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -93,29 +96,35 @@ h1 {
   :-ms-input-placeholder {
     color: #fff;
   }
+  label {
+      float: left;
+ 
+    }
+    input[type="submit"] {
+      font-size: .9em;
+      color: #000000;
+      background: #FFFCFC;
+      outline: none;
+      border: 2px solid #FFFCFC;
+      cursor: pointer;
+      padding: 0.9em;
+      -webkit-appearance: none;
+      width: 100%;
+      margin: 2em 0;
+      letter-spacing: 4px;
+    }
+    
+    input[type="submit"]:hover {
+      -webkit-transition: .5s all;
+      -moz-transition: .5s all;
+      -o-transition: .5s all;
+      -ms-transition: .5s all;
+      transition: .5s all;
+      background: #1abc9c;
+      border: 2px solid #1abc9c;
   
-  input[type="submit"] {
-    font-size: .9em;
-    color: #fff;
-    background: #dc3545;
-    outline: none;
-    border: 1px solid #dc3545;
-    cursor: pointer;
-    padding: 0.9em;
-    -webkit-appearance: none;
-    width: 100%;
-    margin: 2em 0;
-    letter-spacing: 4px;
-  }
-  
-  input[type="submit"]:hover {
-    -webkit-transition: .5s all;
-    -moz-transition: .5s all;
-    -o-transition: .5s all;
-    -ms-transition: .5s all;
-    transition: .5s all;
-    background: #BF5039;
-  }
+    }
+    
   
   .agileits-top p {
     font-size: 1em;

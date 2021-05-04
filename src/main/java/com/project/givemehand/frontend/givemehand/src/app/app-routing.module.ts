@@ -15,7 +15,7 @@ import { ProfilComponent } from './profil/profil.component';
 import {GiveNoteComponent} from './give-note/give-note.component';
 
 const routes: Routes = [
- // { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'accueil', component: AccueilComponent },
   { path: 'mesDemandes', component: MesDemandesComponent},
   //{ path: 'monProfil', component: MonProfilComponent },
