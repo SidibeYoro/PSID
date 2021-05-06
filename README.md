@@ -43,9 +43,11 @@ Pour lancer le projet en local :
 - Coté backend: si vous utilisez IntelliJ il suffit de Run le projet, sinon executer la classe GivemehandApplication. 
 - Coté frontend: il suffit de taper la ligne de commande suivante : **ng serve**
 ## Running unit tests
--Jacoco
 
-## Analysis
+## Analyse de la qualité du code
+- Nous avons utilisé **Codacy** pour analyse la qualité du code 
+- Veuillez cliquer [ici]((https://support.codacy.com/hc/en-us/sections/201760869-Integrations)pour voir la documentation
+
 ## Intégration continue
 Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera l'execution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
 Pour le déploiement, nous avons opter pour **Azure**. 
