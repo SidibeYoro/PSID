@@ -65,7 +65,11 @@ Télécharger  Insomnia ici : https://insomnia.rest/download
 
 ## Documentation
 
-## Site web (plus d'informations à venir)
+## Site web 
+Le site n'est pas à jour
+- Plus d'information à venir  sur le lien :  https://givemehandfrontend.azurewebsites.net
+
+
 
 
 
