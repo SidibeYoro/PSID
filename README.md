@@ -12,6 +12,7 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=alert_status)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=ncloc)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=code_smells)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 
 
 # PSID
