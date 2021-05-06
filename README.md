@@ -64,6 +64,8 @@ Télécharger PosgreSQL ici : https://www.postgresql.org/download/
 Télécharger  Insomnia ici : https://insomnia.rest/download
 
 ## Documentation
+Nous avons documenté le projet d'un point de vue technique et fonctionnel.
+- Le fichier de documentation est sur la racine du projet
 
 ## Site web 
 Le site n'est pas à jour
