@@ -1,4 +1,4 @@
-package com.project.givemehand.util;
+package com.project.givemehand.utils;
 
 import com.project.givemehand.models.entity.ERole;
 import com.project.givemehand.models.entity.Role;

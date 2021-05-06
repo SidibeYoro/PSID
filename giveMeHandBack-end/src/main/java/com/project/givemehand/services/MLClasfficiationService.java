@@ -25,7 +25,7 @@ public class MLClasfficiationService {
         ArrayList<String> listBadWords = new ArrayList<>();
 
 
-        String excelFilePath = "src/main/java/com/project/givemehand/utils/data.xlsx";
+        String excelFilePath = "giveMeHandBack-end/src/main/java/com/project/givemehand/utils/data.xlsx";
         FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
 
         Workbook workbook = new XSSFWorkbook(inputStream);
