@@ -90,8 +90,8 @@ export class CreateOffreComponent implements OnInit {
     }
 
   }
-      detectDesc(text : string ){
-        if (text!=''){
+detectDesc(text : string ){
+    if (text!=''){
     
           this.offreService.detectNegativeClassForText(text).subscribe(data=> {
             if (data=="true"){
@@ -109,7 +109,7 @@ export class CreateOffreComponent implements OnInit {
             console.log("detect");
             console.log("Resultat classification", data);
     
-          }); 
+       }); 
   }
       }
   
