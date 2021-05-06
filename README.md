@@ -31,7 +31,7 @@ Notre plateforme va intégrer également un système d’intelligence de donnée
 ## Réferentiel :
 Nous utilisons GitHub.
 Pour cloner le projet, il y'a deux manières de le faire : 
-- en ligne de commande : **git clone NotreLienGit dossierDestination**, le dossierDestination est un répertoire que vous avez créer sur votre machine, cette commande permet de charger le contenue du repository dans le "dossierDestionation".
+- en ligne de commande : **git clone NotreLienGit dossierDestination**, le dossierDestination est un répertoire que vous avez crée sur votre machine, cette commande permet de charger le contenue du repository dans le "dossierDestionation".
 - directement sur votre IDE: 
 *IntelliJ* : les étapes sont sur le lien suivant : https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
 
