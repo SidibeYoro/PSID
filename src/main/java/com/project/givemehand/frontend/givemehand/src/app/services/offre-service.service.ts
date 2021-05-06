@@ -115,4 +115,12 @@ filtrer(filtre: Filtre):Observable<any>
     return this.http.get<Offre>(this.url+"/filterOffers", {params: httpParams, responseType: 'json'});
 
   }
+
+  detectNegativeClassForText(text:String):Observable<any>
+{
+  return this.http.get(this.url+"/ML/detectNegativeClassForText/" + text,{ responseType: 'text'})
+
+}
+
+
 }

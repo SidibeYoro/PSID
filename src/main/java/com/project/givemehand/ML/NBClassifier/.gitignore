@@ -1,0 +1,15 @@
+# Binary files
+*.class
+
+# Maven files
+target/
+
+# Eclipse files
+.classpath
+.project
+
+# IntelliJ files
+.idea/
+*.iml
+
+*.prefs

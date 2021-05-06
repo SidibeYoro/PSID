@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef,ViewChild,OnInit,Inject,AfterViewInit} from '@angular/core';
 import {Createoffer} from '../classes/createoffer';
 import {OffreServiceService} from '../services/offre-service.service';
 import {Router,ActivatedRoute} from '@angular/router';
@@ -23,10 +23,17 @@ export class CreateOffreComponent implements OnInit {
   categories : Observable< String[]>;
   email:string;
   id_user:number;
-   constructor(private offreService: OffreServiceService,private router: Router,private http: HttpClient) 
-   { } 
+  detectBadClassTitre : boolean=false;;
+  detectBadClassDesc: boolean=false;;
+   constructor( private offreService: OffreServiceService,private router: Router,private http: HttpClient) 
+   {
+
+    } 
   
+
   ngOnInit(): void {
+   // this.offreTitre = this.offres.titre;
+//console.log("titre" +  this.offreTitre);
     this.categories = this.offreService.getCategories();
     this.email= sessionStorage.getItem('currentUser')
     this.offreService.getIdByEmail(this.email).subscribe(
@@ -63,5 +70,50 @@ export class CreateOffreComponent implements OnInit {
   gotoList() {
     this.router.navigate(['accueil']);
   }
+  detectTitre(text : string ){
+    if (text!=''){
 
+
+      this.offreService.detectNegativeClassForText(text).subscribe(data=> {
+        if (data=="true"){
+          this.detectBadClassTitre=true;
+          console.log("class" + this.detectBadClassTitre);
+
+
+        }
+        else {
+          this.detectBadClassTitre=false;
+          console.log("class" + this.detectBadClassTitre);
+
+
+        }
+        console.log("detect");
+        console.log("Resultat classification", data);
+
+      }); 
+    }
+
+  }
+      detectDesc(text : string ){
+        if (text!=''){
+    
+          this.offreService.detectNegativeClassForText(text).subscribe(data=> {
+            if (data=="true"){
+              this.detectBadClassDesc=true;
+              console.log("class" + this.detectBadClassDesc);
+    
+    
+            }
+            else {
+              this.detectBadClassDesc=false;
+              console.log("class" + this.detectBadClassDesc);
+    
+    
+            }
+            console.log("detect");
+            console.log("Resultat classification", data);
+    
+          }); 
+  }
+      }
 }

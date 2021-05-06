@@ -42,7 +42,7 @@ export class AccueilComponent implements OnInit {
     private ngZone: NgZone) {
     }
   ngOnInit(): void {
-    this.user = new User();
+   // this.user = new User();
     this.filtre = new Filtre();
     this.categories = this.offreService.getCategories();
     this.email = sessionStorage.getItem("currentUser");
@@ -58,6 +58,8 @@ export class AccueilComponent implements OnInit {
 
       }
     );
+
+ 
     /*if(this.route.snapshot.paramMap.get('offre')!=null)
     {
         console.log("on est ds la page filtre");
