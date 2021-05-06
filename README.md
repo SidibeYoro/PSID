@@ -2,7 +2,7 @@
 
 <a href="https://github.com/SidibeYoro/PSID/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/SidibeYoro/PSID"></a>
 <a href="https://github.com/SidibeYoro/PSID/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/SidibeYoro/PSID"></a>
-<a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub license" src="https://img.shields.io/github/license/SidibeYoro/PSID?label=Apache%202.0"></a>
+<a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub license" src="https://img.shields.io/badge/licence-Apache%202.0-brightgreen"></a>
 # PSID
 
 L’objectif de ce projet est de proposer une plateforme d'entraide entre particuliers appelée GiveMeAHand. Chaque particulier profite des services en offrant en retour des services fournis basés sur le système de SEL (système d'échange local) .
