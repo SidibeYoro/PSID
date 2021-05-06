@@ -8,6 +8,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/SidibeYoro/PSID/badge.svg?branch=main)](https://coveralls.io/github/SidibeYoro/PSID?branch=main)
 <a href="https://codeclimate.com/github/SidibeYoro/PSID/maintainability"><img src="https://api.codeclimate.com/v1/badges/45d97a8c45a2a2c344dc/maintainability" /></a>
 
+<a href="https://codeclimate.com/github/SidibeYoro/PSID/test_coverage"><img src="https://api.codeclimate.com/v1/badges/45d97a8c45a2a2c344dc/test_coverage" /></a>
+
 
 # PSID
 
