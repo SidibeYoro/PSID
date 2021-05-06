@@ -6,6 +6,7 @@
 <a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub RELEASE" src="https://img.shields.io/badge/release-v3-blue"></a>
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/50fb7bb16ec242fa91744440e90cd639)](https://www.codacy.com/gh/SidibeYoro/PSID/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SidibeYoro/PSID&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/SidibeYoro/PSID/badge.svg?branch=main)](https://coveralls.io/github/SidibeYoro/PSID?branch=main)
+<a href="https://codeclimate.com/github/SidibeYoro/PSID/maintainability"><img src="https://api.codeclimate.com/v1/badges/45d97a8c45a2a2c344dc/maintainability" /></a>
 
 
 # PSID
