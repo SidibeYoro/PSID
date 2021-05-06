@@ -8,6 +8,8 @@
 
 # PSID
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/88d3d8ebdae942b2b1892246651b9ead)](https://app.codacy.com/gh/SidibeYoro/PSID?utm_source=github.com&utm_medium=referral&utm_content=SidibeYoro/PSID&utm_campaign=Badge_Grade_Settings)
+
 L’objectif de ce projet est de proposer une plateforme d'entraide entre particuliers appelée GiveMeAHand. Chaque particulier profite des services en offrant en retour des services fournis basés sur le système de SEL (système d'échange local) .
 Lorsque l’on fournit un service, on obtient une ou plusieurs médailles, en parallèle lorsque l’on reçoit un service on donne une ou plusieurs médailles.
 Une médaille ( ou des médailles ) représente un crédit de service pour un particulier sur son compte.
