@@ -18,6 +18,14 @@ import { OffreDetailComponent } from './offre-detail/offre-detail.component';
 import { UpdateOffreComponent } from './update-offre/update-offre.component';
 import { ModerateComponent } from './moderate/moderate.component';
 import { ProfilComponent } from './profil/profil.component';
+import { ChartComponent } from './chart/chart.component';
+
+// Import angular2-fusioncharts
+import { FusionChartsModule } from 'angular2-fusioncharts';
+// Import FusionCharts library
+import * as FusionCharts from 'fusioncharts';
+// Import FusionCharts Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
 
 
 
@@ -38,7 +46,8 @@ import { ProfilComponent } from './profil/profil.component';
     OffreDetailComponent,
     UpdateOffreComponent,
     ModerateComponent,
-    ProfilComponent
+    ProfilComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +55,7 @@ import { ProfilComponent } from './profil/profil.component';
     HttpClientModule,
     NgbModule,
     FormsModule,
+    FusionChartsModule.forRoot(FusionCharts, Charts),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDmR2n_yrz5nIA_hPK8h6ctKuX4uVyDb68',
       libraries: ['places']
