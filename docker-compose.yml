@@ -1,0 +1,39 @@
+version: '3'
+services:
+  db-postres:
+    image: 'postgres:13.1-alpine'
+    restart: always
+    container_name: db-postres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=PSID
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=GIVEMEAHAND
+    ports:
+      - 5432:5432 # Forward the exposed port 5432 on the container to port 5432 on the host machine
+
+  back-givemehand:
+     image: 'back-givemehand:latest'
+     container_name: back-givemehand
+     ports:
+      - 8080:8080 # Forward the exposed port 8080 on the container to port 8080 on the host machine
+     build:
+      context: ./giveMeHandBack-end
+     depends_on:
+      - db-postres
+     environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db-postres:5432/GIVEMEAHAND
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=PSID
+  front-givemehand:
+    image: 'front-givemehand:latest'
+    build:
+      context: ./giveMeHandFrond-end
+    container_name: app-front
+    ports:
+      - 4200:80
+    depends_on:
+      - back-givemehand
+volumes:
+  db-data:

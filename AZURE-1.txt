@@ -1,0 +1,26 @@
+{
+  "clientId": "89125958-22ae-4645-b358-3090fa3a1c85",
+  "clientSecret": "7I8z7HcX3mt~.LE.zAdo_5m_5P.nPu3dTM",
+  "subscriptionId": "7e05fe85-3005-48b5-8a6f-41e984fca391",
+  "tenantId": "772b524b-5369-4163-b8df-a0dc27ac7385",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
+
+### STAGE 1: Build ###
+FROM node:12.7-alpine AS build
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+### STAGE 2: Run ###
+FROM nginx:1.17.1-alpine
+COPY default.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist/givemehand /usr/share/nginx/html
+EXPOSE 80

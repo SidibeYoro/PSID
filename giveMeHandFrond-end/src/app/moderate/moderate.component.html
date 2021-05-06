@@ -1,0 +1,80 @@
+<h1>Moderation</h1> 
+
+<hr/>
+<div class="section"> 
+  <label class="lab">Liste des offres</label>
+   
+  <div class="container-fluid">
+    <table class="styled-table">
+        <thead>
+          <tr>
+            <th scope="col">Titre</th>
+            <th scope="col">Description</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Ville</th>
+            <th scope="col">Date de fin</th>
+            <th scope="col">Médailles(coût)</th>
+            <th scope="col">DELETE</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let offre of offres | async">
+            <td>{{offre.titre}}</td>
+            <td>{{offre.description}}</td>
+            <td>{{offre.cat}}</td>
+            <td>{{offre.villeOffre}}</td>
+            <td>{{offre.dateFinOffre}}</td>
+            <td>{{offre.nbMedailles}}</td>
+            <td>
+
+
+              
+              <button (click)="deleteoffer(offre.id)" class="btn-danger">   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+              </svg>
+            </button>
+
+
+
+
+        
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section"> 
+    <label class="lab">Liste des utilisateurs</label>
+     
+    <div class="container-fluid">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th scope="col">Prenom</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Email</th>
+            <th scope="col">DELETE</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users | async">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            
+            <td>
+              <button (click)="deleteuser(user.id)" class="btn-danger">  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+              </svg> 
+            </button>
+                      
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> 

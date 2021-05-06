@@ -1,0 +1,46 @@
+
+    <div class="container-fluid">
+      <br>
+        <table class="styled-table">
+        <thead>
+          <tr>
+            <th scope="col">Titre</th>
+            <th scope="col">Description</th>
+            <th scope="col">Catégorie</th>
+            <th scope="col">Ville</th>
+            <th scope="col">Date de fin</th>
+            <th scope="col">Médailles(coût)</th>
+            <th scope="col">M-A-J</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let offre of offres | async">
+            <td>{{offre.titre}}</td>
+            <td>{{offre.description}}</td>
+            <td>{{offre.cat}}</td>
+            <td>{{offre.villeOffre}}</td>
+            <td>{{offre.dateFinOffre.substring(0,10)}}</td>
+            <td>{{offre.nbMedailles}}</td>
+              <td style ="display: flex;">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <button (click)="deleteoffer(offre.id)" class="btn-danger">    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+              </button>
+
+              <button routerLink="/update/{{offre.id}}" routerLinkActive="active" class="btn-info" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+              </svg></button>
+              <button (click)="offreDetails(offre.id)" class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+              </svg></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+    <button routerLink="/add" routerLinkActive="active" class="btn" ><span>Offrir un service</span></button>
+  </div>

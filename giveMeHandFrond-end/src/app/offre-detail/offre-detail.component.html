@@ -1,0 +1,83 @@
+<h2>Details de l'offre</h2> 
+
+<hr/>
+<div *ngIf="offres" class="offreInfos">
+  <div>
+    <label><b>Titre: </b></label> {{offres.titre}}
+  </div>
+  <div>
+    <label><b>Description: </b></label> {{offres.description}}
+  </div>
+  <div>
+    <label><b>categorie: </b></label> {{offres.cat}}
+  </div>  
+  <div>
+    <label><b>Ville: </b></label> {{offres.villeOffre}}
+  </div>  
+  <div>
+    <label><b>date Offre </b></label> {{offres.dateOffre.substring(0,10)}}
+  </div>  
+  <div>
+    <label><b>dateFinOffre </b></label> {{offres.dateFinOffre.substring(0,10)}}
+  </div> 
+  <div>
+    <label><b>nbMedailles </b></label> {{offres.nbMedailles}}
+  </div> 
+  <div>
+    <label><b>Note Moyenne </b></label> {{offres.moyenneNotes.toFixed(1)}}
+  </div>
+
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+  <br>
+    <table class="styled-table">
+    <thead>
+      <tr>
+ 
+        <th scope="col">Date Demande</th>
+        <th scope="col">Statut</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+
+      <!-- <--> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let demande of demandes ">
+        <td>{{demande.dateDemande}}</td>
+
+        <td>
+
+          <select class="form-control"  id="cat"  [(ngModel)]="demande.statut" (change)="selectChangeHandler()" >
+            <option *ngFor="let stat of status | async" [ngValue]="stat">{{stat}}</option>
+        </select>
+        </td>
+
+        <td>{{demande.user.firstName}}</td>
+        <td>{{demande.user.lastName}}</td> 
+
+          <td> <button (click)="updateDemande(demande,demande.id)"  [disabled]="!demande.buttonDisabled" class="btn-info" style="margin-left: 10px"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg></button></td> 
+
+          <td> <button (click)="goProfilDetails(demande.user.id)"   style="margin-left: 10px" class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          </svg></button></td> 
+
+
+      </tr> 
+    </tbody>
+  </table>
+</div>
+<div style="margin-top : 100px" class="alert alert-success" *ngIf="isUpdatedDemande">
+  Your Update is successful!
+</div>
+<br>
+<br>
+<button (click)="list()" class="btn">Back to offer List</button><br>
