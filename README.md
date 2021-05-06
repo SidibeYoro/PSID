@@ -1,3 +1,7 @@
+https://img.shields.io/github/license/SidibeYoro/PSID?label=Apache%202.0
+
+
+
 # PSID
 
 L’objectif de ce projet est de proposer une plateforme d'entraide entre particuliers appelée GiveMeAHand. Chaque particulier profite des services en offrant en retour des services fournis basés sur le système de SEL (système d'échange local) .
