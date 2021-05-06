@@ -43,9 +43,9 @@ Pour l'installation :
 - télécharger VScode sur https://code.visualstudio.com/download
 ### Stack technique : 
 Nous utilisons **Spring Boot** pour le backend, et **AngularJs** pour le frontend.
-Toutes les étapes d'installation seront détaillés dans notre fichier de configuration.  
+Toutes les étapes d'installation seront détaillées  dans notre fichier de configuration.  
 Pour lancer le projet en local :
-- Coté backend: si vous utilisez IntelliJ il suffit de Run le projet, sinon executer la classe GivemehandApplication. 
+- Coté backend: si vous utilisez IntelliJ, il suffit de Run le projet, sinon executer la classe GivemehandApplication. 
 - Coté frontend: il suffit de taper la ligne de commande suivante : **ng serve**
 ## Running unit tests
 
@@ -54,23 +54,22 @@ Pour lancer le projet en local :
 - Veuillez cliquer ici:(https://support.codacy.com/hc/en-us/sections/201760869-Integrations) pour voir la documentation
 
 ## Intégration continue
-Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera l'execution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
+Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera  l'exécution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
 Pour le déploiement, nous avons opter pour **Azure**. 
 
 ## Enregistrement des données
-- Pour les données, nous utilisons **PostgreSQL** comme serveur getionnaire de notre base de donnée.
+- Pour les données, nous utilisons **PostgreSQL** comme serveur gestionnaire de notre base de donnée.
 Télécharger PosgreSQL ici : https://www.postgresql.org/download/                                                                                                            
 - Afin de tester notre API, nous utilisons **Insommnia**.
 Télécharger  Insomnia ici : https://insomnia.rest/download
 
 ## Documentation
 Nous avons documenté le projet d'un point de vue technique et fonctionnel.
-- Le fichier de documentation est sur la racine du projet
+- Le fichier de documentation est sur la racine du projet.
 
 ## Site web 
-Le site n'est pas à jour
-- Plus d'information à venir  sur le lien :  https://givemehandfrontend.azurewebsites.net
-
+Le site n'est pas à jour.
+- Plus d'information à venir sur le lien : https://givemehandfrontend.azurewebsites.net
 
 
 
