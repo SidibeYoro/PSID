@@ -4,6 +4,7 @@
 <a href="https://github.com/SidibeYoro/PSID/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/SidibeYoro/PSID"></a>
 <a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub license" src="https://img.shields.io/badge/licence-Apache%202.0-brightgreen"></a>
 <a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub RELEASE" src="https://img.shields.io/badge/release-v3-blue"></a>
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/50fb7bb16ec242fa91744440e90cd639)](https://www.codacy.com/gh/SidibeYoro/PSID/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SidibeYoro/PSID&amp;utm_campaign=Badge_Grade)
 
 
 # PSID
