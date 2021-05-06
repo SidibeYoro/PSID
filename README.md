@@ -44,6 +44,8 @@ Pour lancer le projet en local :
 - Coté frontend: il suffit de taper la ligne de commande suivante : **ng serve**
 ## Running unit tests
 -Jacoco
+
+## Analysis
 ## Intégration continue
 Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera l'execution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
 Pour le déploiement, nous avons opter pour **Azure**. 
