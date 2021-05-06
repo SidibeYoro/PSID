@@ -172,6 +172,7 @@ public class OffreService implements IOffre {
         User user =userRepository.findById(id).get();
         offres.setUser(user);
         Note note =new Note();
+        System.out.println(note.toString());
         offres.setNote(note);
         this.offreRepository.save(offres);
     }

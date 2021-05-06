@@ -94,7 +94,14 @@ public class Adresse
     */
     @Override
     public String toString() {
-        return street + ", " + zip + " " +city + ", "+ country;
+
+        return "Adresse{" +
+                "id=" + adresse_id +
+                ", street='" + street + '\'' +
+                ", zip='" + zip + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 
 }

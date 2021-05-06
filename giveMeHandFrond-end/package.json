@@ -1,4 +1,9 @@
 {
+
+  "dependencies": {
+    "@types/googlemaps": "^3.43.3",
+    "google-maps-ng2": "^1.0.10",
+
   "name": "givemehand",
   "version": "0.0.0",
   "scripts": {
