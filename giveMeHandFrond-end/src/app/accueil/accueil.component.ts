@@ -39,6 +39,7 @@ export class AccueilComponent implements OnInit {
   email: string;
   addresses: Adresse[] = new Array();
   markers: marker[] = [];
+  isLoggedIn =false;
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -68,6 +69,13 @@ export class AccueilComponent implements OnInit {
           console.log(this.medailles = data);
           }
         );
+      if(this.email!=null){
+        this.isLoggedIn =true;
+      } else {  
+        this.isLoggedIn =false;
+        console.log(this.email);
+        console.log("User simple" + this.isLoggedIn);
+      }
 
      // Utilisation de l'api google maps
      this.mapsAPILoader.load().then(() => {
