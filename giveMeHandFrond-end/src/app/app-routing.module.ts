@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'update/:id', component: UpdateOffreComponent },
   { path: 'offrelist', component: OffreListComponent },
   { path: 'moderate', component: ModerateComponent },
-  { path: 'chart', component: ChartComponent },
+  { path: 'stat', component: ChartComponent },
 
 ];
 
