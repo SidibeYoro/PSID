@@ -46,7 +46,7 @@ Pour lancer le projet en local :
 
 ## Analyse de la qualité du code
 - Nous avons utilisé **Codacy** pour analyse la qualité du code 
-- Veuillez cliquer [ici]((https://support.codacy.com/hc/en-us/sections/201760869-Integrations)pour voir la documentation
+- Veuillez cliquer ici:(https://support.codacy.com/hc/en-us/sections/201760869-Integrations)pour voir la documentation
 
 ## Intégration continue
 Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera l'execution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
