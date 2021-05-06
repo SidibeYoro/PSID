@@ -39,6 +39,7 @@ export class AccueilComponent implements OnInit {
   email: string;
   addresses: Adresse[] = new Array();
   markers: marker[] = [];
+  isLoggedIn =false;
 
   @ViewChild('search')
   public searchElementRef: ElementRef;
@@ -68,6 +69,13 @@ export class AccueilComponent implements OnInit {
           console.log(this.medailles = data);
           }
         );
+      if(this.email!=null){
+        this.isLoggedIn =true;
+      } else {  
+        this.isLoggedIn =false;
+        console.log(this.email);
+        console.log("User simple" + this.isLoggedIn);
+      }
 
      // Utilisation de l'api google maps
      this.mapsAPILoader.load().then(() => {
@@ -170,14 +178,17 @@ export class AccueilComponent implements OnInit {
   ** Création d'une demande
   */
   createDemande(offre: Offre) {
+    if (this.isLoggedIn) {
       let ladate=new Date();
       let demande:Demande;
+      //this.user = this.userService.getUserByEmail(email);
       //verifier si la date de la demande est inferieur à la date de l'offre
       let diff :number = this.medailles - offre.nbMedailles;
-      console.log("diff",diff)
+      console.log("diff",diff);
       if( diff >= 0 ) {
         demande = new Demande ('ATTENTE',  this.formatDate(ladate), offre, this.user,false);
-        console.log("Demande",demande)
+        this.isPossible =true;
+        console.log("Demande",demande);
         this.demandeService.saveRequestService(demande,this.email,offre.id).subscribe(data => {
           console.log(data)
 
@@ -187,9 +198,12 @@ export class AccueilComponent implements OnInit {
               window.location.reload();
         });
         console.log("Possible de faire la demande !");
-      }else {
+      } else {
         this.isPossible =false;
       }
+    } else {
+      this.router.navigate(['connexion']);
+    }
   }
 
  /*

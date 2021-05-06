@@ -11,6 +11,7 @@ import { OffreDetailComponent } from './offre-detail/offre-detail.component';
 import { OffreListComponent } from './offre-list/offre-list.component';
 import { UpdateOffreComponent } from './update-offre/update-offre.component';
 import { ProfilComponent } from './profil/profil.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'update/:id', component: UpdateOffreComponent },
   { path: 'offrelist', component: OffreListComponent },
   { path: 'moderate', component: ModerateComponent },
+  { path: 'stat', component: ChartComponent },
 
 ];
 

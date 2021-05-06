@@ -13,13 +13,15 @@
           <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
         </svg></strong>
       </li>
-
       <li> <a class="nav-link"  *ngIf="isLoggedIn"  routerLink="/updateprofil">Hi {{user.firstName}} !!</a> </li>
 
       <li> <a class="nav-link" routerLinkActive="active" *ngIf="isLoggedIn" routerLink="/mesDemandes" >Mes demandes</a></li>
       <li>  <a class="nav-link" routerLinkActive="active" *ngIf="isLoggedIn" routerLink="/offrelist"  > Mes offres</a></li>
       <li >
         <a href class="nav-link" routerLinkActive="active" routerLink="/moderate" *ngIf="isLoggedInADM" >Moderation</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/stat" *ngIf="isLoggedInADM" >Statistique</a>
       </li>
       <li><a href *ngIf="isLoggedIn || isLoggedInADM" lass="nav-link" (click)="logout()">Deconnexion</a></li>
 
