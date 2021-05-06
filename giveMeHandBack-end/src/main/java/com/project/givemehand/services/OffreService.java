@@ -141,8 +141,9 @@ public class OffreService implements IOffre {
      */
     public List<Offre> filtrerParMot(Filtre f,List<Offre> offres){
         List<Offre> offresRetenues = new ArrayList<Offre>();
-        for (Offre off : offres) {
-            if ((off.getDescription().toUpperCase().contains(f.getMotCles().toUpperCase())) || (off.getTitre().toUpperCase().contains(f.getMotCles().toUpperCase())) ) {
+        for (Offre off :offres)
+        {
+            if((off.getDescription().toUpperCase().contains(f.getMotCles().toUpperCase())) || (off.getTitre().toUpperCase().contains(f.getMotCles().toUpperCase())) ) {
                 offresRetenues.add(off);
             }
         }
@@ -153,7 +154,8 @@ public class OffreService implements IOffre {
      * Renvoie la liste des offres sans filtre
      * @return la liste d'offres existants dans la base
      */
-    public List<Offre> getAlloffres() {
+    public List<Offre> getAlloffres()
+    {
         return offreRepository.findAll();
     }
 
@@ -167,16 +169,14 @@ public class OffreService implements IOffre {
         return this.offreRepository.findById(id).get();
     }
 
-    public void save(Offre offres,Long id)
-    {
-        User user =userRepository.findById(id).get();
+    public void save(Offre offres,Long id) {
+        User user = userRepository.findById(id).get();
         offres.setUser(user);
-        Note note =new Note();
+        Note note = new Note();
         System.out.println(note.toString());
         offres.setNote(note);
         this.offreRepository.save(offres);
     }
-
     public void saveALL(Offre offres, User user)
     {   //offres.setUser(user)
         offres.setUser(user);
@@ -186,9 +186,11 @@ public class OffreService implements IOffre {
         this.offreRepository.save(offres);
     }
 
-    public void deleteoffer(long id) {
+    public void deleteoffer(long id)
+    {
         this.offreRepository.deleteById(id);
     }
+
 
     public Offre update(Offre offres) {
         //Optional<Offre> offreg = offreRepository.findById(id);

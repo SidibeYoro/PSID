@@ -65,7 +65,8 @@ public class RequestService implements IDemande {
         List<Demande>  demandes = requestRepository.findAll();
         List<Demande> demandesRetenues= new ArrayList<Demande>();
 
-        for (Demande req : demandes){
+        for (Demande req : demandes)
+        {
             String statRequest = req.getStatut();
             Statut  statutFilter = f.getStatut();
             Date date = req.getDateDemande();
