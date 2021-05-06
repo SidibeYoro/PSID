@@ -9,6 +9,7 @@
 <a href="https://codeclimate.com/github/SidibeYoro/PSID/maintainability"><img src="https://api.codeclimate.com/v1/badges/45d97a8c45a2a2c344dc/maintainability" /></a>
 
 <a href="https://codeclimate.com/github/SidibeYoro/PSID/test_coverage"><img src="https://api.codeclimate.com/v1/badges/45d97a8c45a2a2c344dc/test_coverage" /></a>
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=alert_status)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 
 
 # PSID
