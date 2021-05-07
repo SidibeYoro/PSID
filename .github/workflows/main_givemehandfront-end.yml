@@ -25,6 +25,7 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        cd giveMeHandFrond-end
         npm install
         npm run build --if-present
         npm run test --if-present
@@ -35,5 +36,5 @@ jobs:
         app-name: givemehandFront-end
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5ED729F44CC345988E1E42C1DD20A2DD }}
-        package: .
+        package: giveMeHandFrond-end
 
