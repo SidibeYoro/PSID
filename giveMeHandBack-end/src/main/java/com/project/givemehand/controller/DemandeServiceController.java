@@ -120,14 +120,9 @@ public class DemandeServiceController {
     }
     @RequestMapping(path ="/getAllDemandes", method = RequestMethod.GET)
     public List<Demande> getDemandesByOffer(){
-
-
         return demandesRep.findAll();
-
     }
-    //@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 
-    //@RequestMapping(path="/incrementerMedailles/{idDemande}", method = RequestMethod.GET)
     @PutMapping("/virtualMoney/{idDemande}")
     public Demande virtualMoney(@PathVariable Long idDemande){
         return service.virtualMoney(idDemande);
@@ -137,7 +132,6 @@ public class DemandeServiceController {
     public boolean isDemandCanUpdated(@PathVariable Long idDemande, @PathVariable String newStatut){
             return service.isDemandCanUpdated(idDemande,newStatut);
     }
-
 
     @PutMapping("/updateRequestService/{id}")
     public ResponseEntity<Demande> updateRequestService(@PathVariable Long id, @RequestBody Demande demande)
@@ -156,4 +150,9 @@ public class DemandeServiceController {
      {
          return service.UpdateDemandeIsNoted(id_demande);
      }
+
+    @GetMapping("/AllDemandes")
+    public List<Demande> getAllDemandes(){
+        return service.getAllServiceRequest();
+    }
 }

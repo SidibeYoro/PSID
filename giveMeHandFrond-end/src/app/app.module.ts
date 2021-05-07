@@ -9,6 +9,7 @@ import { MesDemandesComponent } from './mes-demandes/mes-demandes.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
@@ -23,6 +24,9 @@ import { ModerateComponent } from './moderate/moderate.component';
 import { ProfilComponent } from './profil/profil.component';
 import { GiveNoteComponent } from './give-note/give-note.component';
 import { NoteComponent } from './note/note.component';
+
+import { ChartComponent } from './chart/chart.component';
+
 
 
 
@@ -47,7 +51,8 @@ import { NoteComponent } from './note/note.component';
     ModerateComponent,
     ProfilComponent,
     GiveNoteComponent,
-    NoteComponent
+    NoteComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +60,7 @@ import { NoteComponent } from './note/note.component';
     HttpClientModule,
     NgbModule,
     FormsModule,
+    ChartsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDmR2n_yrz5nIA_hPK8h6ctKuX4uVyDb68',
       libraries: ['places']

@@ -13,6 +13,7 @@ import { OffreListComponent } from './offre-list/offre-list.component';
 import { UpdateOffreComponent } from './update-offre/update-offre.component';
 import { ProfilComponent } from './profil/profil.component';
 import {GiveNoteComponent} from './give-note/give-note.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -32,7 +33,7 @@ const routes: Routes = [
   { path: 'offrelist', component: OffreListComponent },
   { path: 'note', component: GiveNoteComponent},
   { path: 'moderate', component: ModerateComponent },
-
+  { path: 'stat', component: ChartComponent}
 ];
 
 @NgModule({

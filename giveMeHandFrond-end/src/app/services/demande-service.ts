@@ -73,4 +73,8 @@ export class DemandeService {
     filterByStatutAndDate(statut: String, date: String, idUser: number) :Observable<any> {
       return this.http.get(this.url+"/filterByStatutAndDate/"+statut+"/"+date+"/"+idUser);
     }
+
+    getAllDemandes(): Observable<any>{
+      return this.http.get(this.url+"/AllDemandes");
+    }
 }
