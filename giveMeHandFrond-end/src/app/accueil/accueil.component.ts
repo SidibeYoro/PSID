@@ -124,7 +124,6 @@ export class AccueilComponent implements OnInit {
 
           i++;
         })
-        //console.log(this.markers);
       }
     }, (error) => {
       console.log(error);
