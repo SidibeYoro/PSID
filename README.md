@@ -50,8 +50,7 @@ Pour lancer le projet en local :
 ## Running unit tests
 - Pour les test  unitaires nous avons utilisé JUNIT5 et Mockito http://www.lsis.org/elmouelhia/courses/java/coursJavaJUnit.pdf
 ## Analyse de la qualité du code
-- Nous avons utilisé **Codacy** pour analyse la qualité du code 
-- Veuillez cliquer ici:(https://support.codacy.com/hc/en-us/sections/201760869-Integrations) pour voir la documentation
+- Nous avons utilisé **Codacy** pour analyse la qualité du code Veuillez cliquer ici:(https://support.codacy.com/hc/en-us/sections/201760869-Integrations) pour voir la documentation
 - Nous avons aussi utilisé **Sonarecloud** pour voir la maintenability,la vulnerability cliquez ici https://sonarcloud.io pour la documentation
 - par ailleurs nous avons utiliser C**ode Climate**  cliquez ici https://codeclimate.com/ pour voir la documentation 
 
