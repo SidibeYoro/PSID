@@ -155,15 +155,12 @@ public class Offre
     public Set<Demande> getDemandes() {
         return demandes;
     }
-
     public void setDemandes(Set<Demande> demandes) {
         this.demandes = demandes;
     }
-
     public void addDemande(Demande demande){
         this.demandes.add(demande);
     }
-
     public void deleteDemande(Demande demande){
         this.demandes.remove(demande);
     }*/
@@ -226,7 +223,7 @@ public class Offre
     public void refuserDemande(Demande d) {
         if (d.getStatut().equals(Statut.ATTENTE))
         {
-                 d.setStatut(Statut.REFUSE);
+            d.setStatut(Statut.REFUSE);
         }
     }
 }

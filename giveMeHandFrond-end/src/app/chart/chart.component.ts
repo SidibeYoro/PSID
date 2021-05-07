@@ -109,6 +109,7 @@ export class ChartComponent implements OnInit {
             }
           });
         }
+        console.log(data2);
         this.barChartDataDemandes = [{ data: data2, label: 'Demandes/Catégorie',backgroundColor:'rgba(243, 156, 18 )' }];
         this.doughnutChartData= [nbOffres];
       });

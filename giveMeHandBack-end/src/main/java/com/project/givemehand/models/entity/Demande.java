@@ -20,16 +20,13 @@ public class Demande {
     private Long id;
     private Date dateDemande;
     private String statut;
-
-
-
     private Boolean is_noted;
 
     @ManyToOne(fetch = FetchType.LAZY,
             cascade = CascadeType.PERSIST)
     private User user;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Offre offre;
 
     public Demande(){

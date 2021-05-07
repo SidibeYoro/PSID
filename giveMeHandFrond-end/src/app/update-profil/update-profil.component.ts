@@ -38,10 +38,10 @@ errorMessage = '';
   onSubmit(){
     this.submitted = true;
     console.log("Data USER SUBMITED")
-    console.log("USER STREET" + this.user.adresse.street)
+    //console.log("USER STREET" + this.user.adresse.street)
     this.userService.updateUser(this.user).subscribe(
       
-      data=> console.log(data),
+      data=> console.log("modification : ",data),
       error => console.log(error)
     );
   }

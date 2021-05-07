@@ -29,8 +29,6 @@ import * as FusionCharts from 'fusioncharts';
 // Import FusionCharts Charts module
 import * as Charts from 'fusioncharts/fusioncharts.charts';
 
-import { ChartComponent } from './chart/chart.component';
-
 
 
 
@@ -52,8 +50,6 @@ import { ChartComponent } from './chart/chart.component';
     UpdateOffreComponent,
     ModerateComponent,
     ProfilComponent,
-    GiveNoteComponent,
-    NoteComponent,
     ChartComponent
   ],
   imports: [
