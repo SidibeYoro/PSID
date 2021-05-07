@@ -56,7 +56,6 @@ public class UserServiceController {
 
     @RequestMapping(value = "/signin", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> authenticateUser(@RequestBody LoginRequest loginRequest) {
-
         System.out.println("signin"+loginRequest.getEmail());
         if (userRepository.existsByEmail(loginRequest.getEmail())==false) {
             return ResponseEntity
@@ -134,17 +133,17 @@ public class UserServiceController {
 
     @RequestMapping(value = "/findUserByemail/{email}", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> findByEmail(@PathVariable ("email") String email ) {
-
         return service.findUserByEmail(email);
     }
+  
     @RequestMapping(value = "/getMedaillesByemail/{email}", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
     public int getMedaillesByemail(@PathVariable ("email") String email )  {
-
         return service.getMedaillesByemail(email);
     }
+  
     @RequestMapping(value = "/getIdUserByemail/{email}", method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public Long getIdUserByemail(@PathVariable ("email") String email )  {
 
+    public Long getIdUserByemail(@PathVariable ("email") String email )  {
         return service.getIdUserByemail(email);
     }
 

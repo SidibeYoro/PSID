@@ -47,8 +47,6 @@ export class ProfilComponent implements OnInit {
     
     }, error => console.log(error));
 
-  // this.demandesTotales =this.demandesAcceptes + this.demandesRefuses+ this.demandesWaiting;
-    // on recupere les offres de l'utilisateur
     this.userService.getOffersByUser(this.profilId).subscribe(offresUser =>{
 
       console.log(offresUser)
@@ -60,7 +58,6 @@ export class ProfilComponent implements OnInit {
 
       console.log(dataUser)
       this.user = dataUser;
-     // this.user.dateInscription = datePipe.transform(dateInscription, 'yyyy-MM-dd');
 
     }, error => console.log(error));
 

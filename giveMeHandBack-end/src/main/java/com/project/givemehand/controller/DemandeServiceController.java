@@ -11,7 +11,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 @RestController
 @CrossOrigin
@@ -118,12 +121,27 @@ public class DemandeServiceController {
         Statut[] statuts = Statut.values();
         return statuts ;
     }
+
     @RequestMapping(path ="/getAllDemandes", method = RequestMethod.GET)
     public List<Demande> getDemandesByOffer(){
         return demandesRep.findAll();
     }
 
-    @PutMapping("/virtualMoney/{idDemande}")
+    @RequestMapping(path="getNbDemandeByOffer", method = RequestMethod.GET)
+    public Map<String, Integer> getNbDemandeByOffer(){
+        Map<String, Integer> map = new HashMap<>();
+        List<Offre> offres = this.offreService.getAlloffres();
+        List<Demande> demandes;
+        for ( Offre f : offres) {
+            demandes = service.getDemandesByOffre(f);
+            map.put(f.getTitre(),demandes.size());
+        }
+        return map;
+    }
+    //@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    //@RequestMapping(path="/incrementerMedailles/{idDemande}", method = RequestMethod.GET)
+
+  @PutMapping("/virtualMoney/{idDemande}")
     public Demande virtualMoney(@PathVariable Long idDemande){
         return service.virtualMoney(idDemande);
 

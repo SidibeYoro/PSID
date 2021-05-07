@@ -1,3 +1,18 @@
+
+
+<a href="https://github.com/SidibeYoro/PSID/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/SidibeYoro/PSID"></a>
+<a href="https://github.com/SidibeYoro/PSID/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/SidibeYoro/PSID"></a>
+<a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub license" src="https://img.shields.io/badge/licence-Apache%202.0-brightgreen"></a>
+<a href="https://github.com/SidibeYoro/PSID"><img alt="GitHub RELEASE" src="https://img.shields.io/badge/release-v3-blue"></a>
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/50fb7bb16ec242fa91744440e90cd639)](https://www.codacy.com/gh/SidibeYoro/PSID/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SidibeYoro/PSID&amp;utm_campaign=Badge_Grade)
+[![Coverage Status](https://coveralls.io/repos/github/SidibeYoro/PSID/badge.svg?branch=main)](https://coveralls.io/github/SidibeYoro/PSID?branch=main)
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=alert_status)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=ncloc)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=code_smells)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
+
+
 # PSID
 
 L’objectif de ce projet est de proposer une plateforme d'entraide entre particuliers appelée GiveMeAHand. Chaque particulier profite des services en offrant en retour des services fournis basés sur le système de SEL (système d'échange local) .
@@ -5,7 +20,7 @@ Lorsque l’on fournit un service, on obtient une ou plusieurs médailles, en pa
 Une médaille ( ou des médailles ) représente un crédit de service pour un particulier sur son compte.
 Par exemple :
 - X propose un service de couture qui coûte 3 médailles
-- Y voudrait avoir une couturière, il est nécessaire pour elle d’avoir un crédit de service dans son compte. Si elle en a 3, elle peut donc demander le service de x.
+- Y voudrait avoir une couturière, il est nécessaire pour elle d’avoir un crédit de service dans son compte. Si elle en a 3, elle peut donc demander le service de X.
 - X dispose à ce moment de 6 médailles et Y de 0 médailles.
 
 A l’inscription l’utilisateur disposera d’un crédit de 10 médailles, ainsi lorsque ces 10 médailles seront épuisées, l’utilisateur devra fournir des services afin d’avoir plus de médailles dans son compte et pouvoir bénéficier d’autre service.
@@ -16,7 +31,7 @@ Notre plateforme va intégrer également un système d’intelligence de donnée
 ## Réferentiel :
 Nous utilisons GitHub.
 Pour cloner le projet, il y'a deux manières de le faire : 
-- en ligne de commande : **git clone NotreLienGit dossierDestination**, le dossierDestination est un répertoire que vous avez créer sur votre machine, cette commande permet de charger le contenue du repository dans le "dossierDestionation".
+- en ligne de commande : **git clone NotreLienGit dossierDestination**, le dossierDestination est un répertoire que vous avez crée sur votre machine, cette commande permet de charger le contenue du repository dans le "dossierDestionation".
 - directement sur votre IDE: 
 *IntelliJ* : les étapes sont sur le lien suivant : https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
 
@@ -28,23 +43,34 @@ Pour l'installation :
 - télécharger VScode sur https://code.visualstudio.com/download
 ### Stack technique : 
 Nous utilisons **Spring Boot** pour le backend, et **AngularJs** pour le frontend.
-Toutes les étapes d'installation seront détaillés dans notre fichier de configuration.  
+Toutes les étapes d'installation seront détaillées  dans notre fichier de configuration.  
 Pour lancer le projet en local :
-- Coté backend: si vous utilisez IntelliJ il suffit de Run le projet, sinon executer la classe GivemehandApplication. 
+- Coté backend: si vous utilisez IntelliJ, il suffit de Run le projet, sinon executer la classe GivemehandApplication. 
 - Coté frontend: il suffit de taper la ligne de commande suivante : **ng serve**
+## Running unit tests
+
+## Analyse de la qualité du code
+- Nous avons utilisé **Codacy** pour analyse la qualité du code 
+- Veuillez cliquer ici:(https://support.codacy.com/hc/en-us/sections/201760869-Integrations) pour voir la documentation
 
 ## Intégration continue
-Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera l'execution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
+Nous avons conteneuriser notre application à l'aide de **Docker**, ceci facilitera  l'exécution de notre site sur n'importe quel serveur ou machine physique ou virtuelLe.
 Pour le déploiement, nous avons opter pour **Azure**. 
 
 ## Enregistrement des données
-- Pour les données, nous utilisons **PostgreSQL** comme serveur getionnaire de notre base de donnée.
+- Pour les données, nous utilisons **PostgreSQL** comme serveur gestionnaire de notre base de donnée.
 Télécharger PosgreSQL ici : https://www.postgresql.org/download/                                                                                                            
 - Afin de tester notre API, nous utilisons **Insommnia**.
-Télecharger  Insomnia ici : https://insomnia.rest/download
+Télécharger  Insomnia ici : https://insomnia.rest/download
 
 ## Documentation
+Nous avons documenté le projet d'un point de vue technique et fonctionnel.
+- Le fichier de documentation est sur la racine du projet.
+
 ## Site web 
+Le site n'est pas à jour.
+- Plus d'information à venir sur le lien : https://givemehandfrontend.azurewebsites.net
+
 
 
 

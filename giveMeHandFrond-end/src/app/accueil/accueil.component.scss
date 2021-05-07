@@ -10,25 +10,22 @@
   display: flex;
   top:0;
   left:20px;
-  height:100%;
   width:100%;
   grid-template-columns: 150px auto 320px;
   margin-top: 100px;
+  margin-bottom: 150px;
   padding-bottom:40px;
-  overflow-y: scroll;
   gap: 20px;
   background-color : #FFFCFC;
 }
-/*
-.filter{
-  grid-column: 1;
-  padding-top: 50px;
-  text-align: center;
-  padding-right: 50px;
-  padding-left: 50px;
-  width: 243px;
-  background-color: #EACAAC;
-} */
+
+.alert-danger {
+  width: 312px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  top: 275px;
+}
 
 .form-style-5{
 max-width: 500px;
@@ -174,31 +171,6 @@ label{
   font-family: 'Montserrat', sans-serif;
 }
 
-/*
-.form-style-5 button {
-  border-color: #1abc9c;
-  color: #fff;
-  box-shadow: 0 0 40px 40px #1abc9c inset, 0 0 0 0 #1abc9c;
-  transition: all 150ms ease-in-out;}
-  
-  .form-style-5 button :hover {
-    box-shadow: 0 0 10px 0 #1abc9c inset, 0 0 10px 4px #1abc9c;
-  }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-fluid {
   grid-column: 2;
   display: grid;
@@ -279,7 +251,7 @@ label{
 
 agm-map {
   height: 300px;
-  width: 200px;
+  width: 300px;
 }
 
 i {

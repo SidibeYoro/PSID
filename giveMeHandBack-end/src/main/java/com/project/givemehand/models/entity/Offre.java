@@ -16,9 +16,9 @@ import java.util.Set;
 @Table ( name ="Offre")
 public class Offre
 {
-        @Id
-        @GeneratedValue(strategy= GenerationType.IDENTITY)
-        private Long id;
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
     private String titre;
     private String description;
     //@JsonFormat(pattern="dd/MM/yyyy",timezone="Europe/France")

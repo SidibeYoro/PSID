@@ -114,4 +114,5 @@ export class ChartComponent implements OnInit {
       });
       
     }
+
 }

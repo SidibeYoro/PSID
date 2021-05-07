@@ -74,7 +74,13 @@ export class DemandeService {
       return this.http.get(this.url+"/filterByStatutAndDate/"+statut+"/"+date+"/"+idUser);
     }
 
+
     getAllDemandes(): Observable<any>{
       return this.http.get(this.url+"/AllDemandes");
     }
+    getNbDemandeByOffer() :Observable<any> {
+      return this.http.get(this.url+"/getNbDemandeByOffer");
+    }
+
+
 }
