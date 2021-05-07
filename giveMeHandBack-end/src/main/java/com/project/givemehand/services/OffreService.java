@@ -3,6 +3,7 @@ package com.project.givemehand.services;
 import com.project.givemehand.interfaces.IOffre;
 import com.project.givemehand.models.entity.*;
 import com.project.givemehand.repository.OffreRepository;
+import com.project.givemehand.repository.RequestRepository;
 import com.project.givemehand.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,6 +22,8 @@ public class OffreService implements IOffre {
     private OffreRepository offreRepository;
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private RequestService requestService;
     @Autowired
     private UserService userService;
 
@@ -187,7 +190,17 @@ public class OffreService implements IOffre {
     }
 
     public void deleteoffer(long id) {
-        this.offreRepository.deleteById(id);
+        Offre  f = offreRepository.findById(id).get();
+        List <Demande> demandes = requestService.getDemandesByOffre(f);
+        if(demandes.size()!=0) {
+            for (Demande d : demandes) {
+                requestService.deleteServiceRequest(d.getId());
+            }
+            this.offreRepository.deleteById(id);
+        }else{
+            this.offreRepository.deleteById(id);
+        }
+
     }
 
     public Offre update(Offre offres) {
