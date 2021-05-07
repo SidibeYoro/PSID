@@ -9,12 +9,11 @@
   display: flex;
   top:0;
   left:20px;
-  height:100%;
   width:100%;
   grid-template-columns: 150px auto 320px;
   margin-top: 100px;
+  margin-bottom: 150px;
   padding-bottom:40px;
-  overflow:hidden;
   gap: 20px;
   background-color : #FFFCFC;
 }
@@ -24,7 +23,7 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: auto;
-  top: 223px;
+  top: 275px;
 }
 
 .form-style-5{
@@ -251,7 +250,7 @@ label{
 
 agm-map {
   height: 300px;
-  width: 200px;
+  width: 300px;
 }
 
 i {

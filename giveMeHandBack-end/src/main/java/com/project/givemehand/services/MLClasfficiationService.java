@@ -23,9 +23,9 @@ public class MLClasfficiationService {
     public static ArrayList<String> retrieveData() throws IOException {
 
         ArrayList<String> listBadWords = new ArrayList<>();
+        String excelFilePath = "C:\\Users\\kamis\\IdeaProjects\\PSID\\giveMeHandBack-end\\src\\main\\java\\com\\project\\givemehand\\utils\\data.xlsx";
 
 
-        String excelFilePath = "giveMeHandBack-end/src/main/java/com/project/givemehand/utils/data.xlsx";
         FileInputStream inputStream = new FileInputStream(new File(excelFilePath));
 
         Workbook workbook = new XSSFWorkbook(inputStream);

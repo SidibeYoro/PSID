@@ -29,7 +29,7 @@ public class Demande {
             cascade = CascadeType.PERSIST)
     private User user;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Offre offre;
 
     public Demande(){

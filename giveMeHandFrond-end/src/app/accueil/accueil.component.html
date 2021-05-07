@@ -53,7 +53,7 @@
   <div id="map">
   
     <agm-map [latitude]="lat" [longitude]="lng" [zoom]="10" >
-  
+<!--
     <agm-marker 
         *ngFor="let m of markers"
         [latitude]="m.lat"
@@ -61,15 +61,15 @@
         [markerDraggable]=false
         [label]="m.label"
         >  
-    </agm-marker>
-    
+    </agm-marker>  
+  -->  
    </agm-map>
    </div>
 </div>
 <div
-  class="alert alert-danger"
-  role="alert"
-  *ngIf="!isPossible"
+class="alert alert-danger"
+role="alert"
+*ngIf="!isPossible"
 >
   Vous n'avez pas assez de médailles ! 
 </div>
