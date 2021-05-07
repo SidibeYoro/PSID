@@ -18,7 +18,7 @@ import java.util.Set;
  *  Elle represente le comtroller de la classe OffreService
  */
 @RestController
-@CrossOrigin
+@CrossOrigin("*")
 @RequestMapping(value = "/api")
 public class OffreServiceController
 {
