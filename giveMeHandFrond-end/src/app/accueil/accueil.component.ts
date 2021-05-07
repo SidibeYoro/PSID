@@ -66,7 +66,7 @@ export class AccueilComponent implements OnInit {
   
     this.userService.getMedaillesUserByEmail(this.email).subscribe(
       data=>{
-       //console.log(this.medailles = data);
+       console.log(this.medailles = data);
 
       }
     );
