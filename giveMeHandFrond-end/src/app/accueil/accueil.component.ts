@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild,NgZone } from '@angular/core';
+import { Adresse } from '../classes/adresse';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
+import { Component, ElementRef, OnInit, ViewChild,NgZone } from '@angular/core';
 import {Offre} from '../classes/offre';
 import {OffreServiceService} from '../services/offre-service.service';
 import {Router,ActivatedRoute} from '@angular/router';
@@ -10,7 +11,6 @@ import { DemandeService } from '../services/demande-service';
 import { Demande } from '../classes/demande';
 import { UserService } from '../services/user.service';
 import { User } from '../classes/user';
-import { Adresse } from '../classes/adresse';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -22,22 +22,23 @@ const httpOptions = {
   styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent implements OnInit {
+    isPossible: boolean =true;
+    private geoCoder;
+    zoom:number = 50;
   empty =false;
   offres: Observable<Offre[]>;
   categories : Observable< String[]>;
   lat: number = 48.856614;
   lng: number = 2.3522219;
-  zoom:number = 50;
   address: string = "";
-  private geoCoder;
   filtre: Filtre;
+    addresses: Adresse[] = new Array();
+  markers: marker[] = [];
   medailles: number;
-  isPossible: boolean =true;
   user : any;
   email: string;
   isLoggedIn =false;
-  addresses: Adresse[] = new Array();
-  markers: marker[] = [];
+
 
 
   @ViewChild('search')
