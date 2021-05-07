@@ -23,7 +23,7 @@ export class Offre {
     this.dateFinOffre = datePipe.transform(dateFinOffre, 'yyyy-MM-dd');
     this.nbMedailles = nbMedailles;
    // this.note = 0;
-    this.moyennenote = this.moyennenote;
+   // this.moyennenote = this.moyennenote;
     this.user =user;
   }
   
