@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0; 
   font-family: 'Montserrat', sans-serif;
-  
  }
 
 .accueil {
+    margin-bottom: 150px;
   position:absolute;
   display: flex;
   top:0;
@@ -13,12 +13,10 @@
   width:100%;
   grid-template-columns: 150px auto 320px;
   margin-top: 100px;
-  margin-bottom: 150px;
   padding-bottom:40px;
   gap: 20px;
   background-color : #FFFCFC;
 }
-
 .alert-danger {
   width: 312px;
   padding-right: 15px;
@@ -34,7 +32,6 @@ background: #EACAAC;
 margin: 10px auto;
 padding: 20px;
 border-radius: 8px;
-//	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 
@@ -202,8 +199,6 @@ label{
 .titre{
   text-align: center;
   color: #000000;
-  text-align: center;
-
   font-weight: 50;
   font-size: 25px;
   text-transform: capitalize;
@@ -251,7 +246,7 @@ label{
 
 agm-map {
   height: 300px;
-  width: 300px;
+  width : 300px;
 }
 
 i {
