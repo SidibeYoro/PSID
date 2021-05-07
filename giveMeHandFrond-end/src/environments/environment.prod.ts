@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api_url: 'https://givemehand.azurewebsites.net/api',
+  api_url: 'https://givemehandback-end.azurewebsites.net/api',
 };
