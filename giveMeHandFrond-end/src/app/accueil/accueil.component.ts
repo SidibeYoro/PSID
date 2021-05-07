@@ -52,8 +52,6 @@ export class AccueilComponent implements OnInit {
     this.email = sessionStorage.getItem("currentUser");
     this.userService.getUserByEmail(this.email)
     .subscribe(data => {
-      console.log("user data")
-      console.log(data)
       this.user= data;
     });
     if(this.email!=null){
@@ -66,8 +64,7 @@ export class AccueilComponent implements OnInit {
   
     this.userService.getMedaillesUserByEmail(this.email).subscribe(
       data=>{
-       console.log(this.medailles = data);
-
+       this.medailles = data;
       }
     );
 
@@ -113,7 +110,7 @@ export class AccueilComponent implements OnInit {
       if(value.length == 0) {
         this.empty = true;
       }
-      else{
+      else {
         var i = 0;
         // Affichage des offres sur la carte
         value.forEach(element =>{
@@ -127,17 +124,16 @@ export class AccueilComponent implements OnInit {
 
           i++;
         })
-        console.log(this.markers);
+        //console.log(this.markers);
       }
     }, (error) => {
       console.log(error);
     }, () => {
       console.log('Fini !');
     });
-
   }
   
-  filtrer(){
+  filtrer() {
     if(this.address !=""){
       this.filtre.ville = this.address;
     }
@@ -155,7 +151,6 @@ export class AccueilComponent implements OnInit {
         this.addresses[i] = element.user.adresse;
         let add: string = this.addresses[i].street+ ", " + this.addresses[i].zip + " " +this.addresses[i].city + ", "+ this.addresses[i].country;
         this.mapsAPILoader.load().then(() => {
-          //this.geoCoder = new google.maps.Geocoder;
           this.codeAddress(add, this.markers);
         });
         i++;
@@ -266,8 +261,6 @@ codeAddress(address, markers) {
 var mapOptions = {
   zoom : 10
 }
-console.log(address, markers);
-//var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 this.geoCoder.geocode( { 'address': address}, function(results, status) {
       if (status == 'OK') {
         console.log(results[0]);
