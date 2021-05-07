@@ -35,5 +35,5 @@ jobs:
         app-name: givemehandFront-end
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5ED729F44CC345988E1E42C1DD20A2DD }}
-        package: giveMeHandFrond-end
+        package: giveMeHandFrond-end/dist/givemehand
 
