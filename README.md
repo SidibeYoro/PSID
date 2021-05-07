@@ -7,7 +7,6 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/50fb7bb16ec242fa91744440e90cd639)](https://www.codacy.com/gh/SidibeYoro/PSID/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SidibeYoro/PSID&amp;utm_campaign=Badge_Grade)
 [![Coverage Status](https://coveralls.io/repos/github/SidibeYoro/PSID/badge.svg?branch=main)](https://coveralls.io/github/SidibeYoro/PSID?branch=main)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=alert_status)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=ncloc)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=SidibeYoro_PSID&metric=code_smells)](https://sonarcloud.io/dashboard?id=SidibeYoro_PSID)
