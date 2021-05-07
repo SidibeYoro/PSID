@@ -11,7 +11,6 @@ import { DemandeService } from '../services/demande-service';
 import { Demande } from '../classes/demande';
 import { UserService } from '../services/user.service';
 import { User } from '../classes/user';
-
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
