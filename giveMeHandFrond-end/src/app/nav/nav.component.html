@@ -20,8 +20,9 @@
       <li >
         <a href class="nav-link" routerLinkActive="active" routerLink="/moderate" *ngIf="isLoggedInADM" >Moderation</a>
       </li>
-      <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="/stat" *ngIf="isLoggedInADM" >Statistique</a>
+      <li >
+        <a href class="nav-link" routerLinkActive="active" routerLink="/stat" *ngIf="isLoggedInADM" >Statistiques</a>
+   
       </li>
       <li><a href *ngIf="isLoggedIn || isLoggedInADM" lass="nav-link" (click)="logout()">Deconnexion</a></li>
 

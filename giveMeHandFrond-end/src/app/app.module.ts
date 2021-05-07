@@ -9,6 +9,8 @@ import { MesDemandesComponent } from './mes-demandes/mes-demandes.component';
 import { LoginComponent } from './login/login.component';
 import { NavComponent } from './nav/nav.component';
 import {HttpClientModule} from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
+
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateProfilComponent } from './update-profil/update-profil.component';
@@ -26,6 +28,9 @@ import { FusionChartsModule } from 'angular2-fusioncharts';
 import * as FusionCharts from 'fusioncharts';
 // Import FusionCharts Charts module
 import * as Charts from 'fusioncharts/fusioncharts.charts';
+
+import { ChartComponent } from './chart/chart.component';
+
 
 
 
@@ -47,6 +52,8 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';
     UpdateOffreComponent,
     ModerateComponent,
     ProfilComponent,
+    GiveNoteComponent,
+    NoteComponent,
     ChartComponent
   ],
   imports: [
@@ -55,7 +62,7 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';
     HttpClientModule,
     NgbModule,
     FormsModule,
-    FusionChartsModule.forRoot(FusionCharts, Charts),
+    ChartsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDmR2n_yrz5nIA_hPK8h6ctKuX4uVyDb68',
       libraries: ['places']
