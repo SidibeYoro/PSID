@@ -35,7 +35,7 @@ Pour cloner le projet, il y'a deux manières de le faire :
 *IntelliJ* : les étapes sont sur le lien suivant : https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub
 
 # Environement : 
-### IDE: 
+## IDE: 
 Nous utilisons IntelliJ pour le coté backend, et Visual Studio Code pour le frontend. 
 Pour l'installation :
 - télécharger IntelliJ sur https://www.jetbrains.com/fr-fr/idea/download/download-thanks.html?platform=windows&code=IIC (ATTENTION: il faut bien choisir le Community qui est gratuit)
